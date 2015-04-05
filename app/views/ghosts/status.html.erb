@@ -1,0 +1,10 @@
+<div class="container">
+  <h1><%= @guardian %></h1>
+  <p>You're on the <%= @platform %> platform!</p>
+
+  <ul>
+  <% @cards_obtained.each do |card_id, has| %>
+  <li><%= card_id %> <%= has  %></li>
+  <% end %>
+  </ul>
+</div>
