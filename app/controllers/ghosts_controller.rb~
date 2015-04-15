@@ -1,4 +1,0 @@
-class GhostsController < ApplicationController
-  def status
-  end
-end
