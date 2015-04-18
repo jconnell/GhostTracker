@@ -6,11 +6,20 @@
     <h1><%= planet %></h1>
     <% @ghosts_obtained[planet].each do |ghost, has| %>
       <% if has %>
-        <p><b><%= ghost.card_name %></b><p>
+        <div class="panel panel-success">
       <% else %>
-        <p><%= ghost.card_name %></p>
+        <div class="panel panel-danger">
       <% end %>
+        <div class="panel-heading">
+	  <h3 class="panel-title"><%= ghost.card_name %></h3>
+	</div>
+	<div class="panel-body">
+	  <p> Location: <%= ghost.location %> </p>
+	  <p> Missions: <%= ghost.missions %> </p>
+	  <p> Points: <%= ghost.points %> </p>
+	</div>
+      </div>
     <% end %>
   <% end %>
-
+     
 </div>
