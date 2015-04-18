@@ -4,22 +4,28 @@
 
   <% ["Tower", "Earth", "Moon", "Venus", "Mars"].each do |planet| %>
     <h1><%= planet %></h1>
-    <% @ghosts_obtained[planet].each do |ghost, has| %>
-      <% if has %>
-        <div class="panel panel-success">
-      <% else %>
-        <div class="panel panel-danger">
+    <div class="panel-group" id="accordian">
+      <% @ghosts_obtained[planet].each do |ghost, has| %>
+	<% if has %>
+          <div class="panel panel-success">
+	<% else %>
+          <div class="panel panel-danger">
+	<% end %>
+          <div class="panel-heading">
+	    <h3 class="panel-title">
+	      <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian" href="#">
+		<%= ghost.card_name %>
+	      </a>
+	    </h3>
+	  </div>
+	  <div class="panel-body">
+	    <p> Location: <%= ghost.location %> </p>
+	    <p> Missions: <%= ghost.missions %> </p>
+	    <p> Points: <%= ghost.points %> </p>
+	  </div>
+	</div>
       <% end %>
-        <div class="panel-heading">
-	  <h3 class="panel-title"><%= ghost.card_name %></h3>
-	</div>
-	<div class="panel-body">
-	  <p> Location: <%= ghost.location %> </p>
-	  <p> Missions: <%= ghost.missions %> </p>
-	  <p> Points: <%= ghost.points %> </p>
-	</div>
-      </div>
-    <% end %>
+    </div>
   <% end %>
      
 </div>
