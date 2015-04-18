@@ -2,9 +2,14 @@
   <h1><%= @guardian %></h1>
   <p>You're on the <%= @platform %> platform!</p>
 
-  <ul>
-  <% @cards_obtained.each do |card_id, has| %>
-  <li><%= card_id %> <%= has  %></li>
+  <h1>Tower</h1>
+  
+  <% @ghosts_obtained.each do |ghost, has| %>
+   <p><%= ghost.card_name %></p> 
+   <% if has %>
+      <p><b><%= ghost.card_name %> <%= has %></b></p>
+    <% else %>
+      <p><%= ghost.card_name %> <%= has  %></p>
+    <% end %>
   <% end %>
-  </ul>
 </div>

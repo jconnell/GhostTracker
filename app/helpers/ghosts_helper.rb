@@ -34,19 +34,19 @@ module GhostsHelper
     return cards
   end
 
-  def determine_cards_obtained(cards)
+  def determine_ghosts_obtained(cards)
     
-    cards_obtained = {}
+    ghosts_obtained = {}
     
-    Ghost.all.each do |ghost_card|
-      if cards.include? ghost_card.card_id
-        cards_obtained[ghost_card.card_id] = true
+    Ghost.all.each do |ghost|
+      if cards.include? ghost.card_id
+        ghosts_obtained[ghost] = true
       else
-        cards_obtained[ghost_card.card_id] = false
+        ghosts_obtained[ghost] = false
       end
     end
 
-    return cards_obtained
+    return ghosts_obtained
   end
         
 
