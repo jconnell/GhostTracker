@@ -2,9 +2,9 @@
   <h1><%= @guardian %></h1>
   <p>You're on the <%= @platform %> platform!</p>
 
-  <% @ghosts_obtained.each do |planet, ghosts| %>
+  <% ["Tower", "Earth", "Moon", "Venus", "Mars"].each do |planet| %>
     <h1><%= planet %></h1>
-    <% ghosts.each do |ghost, has| %>
+    <% @ghosts_obtained[planet].each do |ghost, has| %>
       <% if has %>
         <p><b><%= ghost.card_name %></b><p>
       <% else %>
