@@ -15,8 +15,11 @@ ActiveRecord::Schema.define(:version => 20150403214537) do
 
   create_table "ghosts", :force => true do |t|
     t.integer  "card_id"
+    t.string   "card_name"
     t.string   "planet"
     t.string   "location"
+    t.integer  "points"
+    t.string   "missions"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
