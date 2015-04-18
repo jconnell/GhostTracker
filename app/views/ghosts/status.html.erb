@@ -2,14 +2,15 @@
   <h1><%= @guardian %></h1>
   <p>You're on the <%= @platform %> platform!</p>
 
-  <h1>Tower</h1>
-  
-  <% @ghosts_obtained.each do |ghost, has| %>
-   <p><%= ghost.card_name %></p> 
-   <% if has %>
-      <p><b><%= ghost.card_name %> <%= has %></b></p>
-    <% else %>
-      <p><%= ghost.card_name %> <%= has  %></p>
+  <% @ghosts_obtained.each do |planet, ghosts| %>
+    <h1><%= planet %></h1>
+    <% ghosts.each do |ghost, has| %>
+      <% if has %>
+        <p><b><%= ghost.card_name %></b><p>
+      <% else %>
+        <p><%= ghost.card_name %></p>
+      <% end %>
     <% end %>
   <% end %>
+
 </div>

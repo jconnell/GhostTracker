@@ -39,10 +39,14 @@ module GhostsHelper
     ghosts_obtained = {}
     
     Ghost.all.each do |ghost|
+      if !ghosts_obtained.has_key? ghost.planet
+        ghosts_obtained[ghost.planet] = {}
+      end
+
       if cards.include? ghost.card_id
-        ghosts_obtained[ghost] = true
+        ghosts_obtained[ghost.planet][ghost] = true
       else
-        ghosts_obtained[ghost] = false
+        ghosts_obtained[ghost.planet][ghost] = false
       end
     end
 
