@@ -1,7 +1,7 @@
 <div class="container" style="padding-top: 20px">
   <% if flash[:error] %>
   <div class="alert alert-danger" role="alert">
-    <p><%= flash[:error] %></p>
+    <p><%= flash[:error].html_safe %></p>
   </div>
   <% end %>
   <p> </p>
