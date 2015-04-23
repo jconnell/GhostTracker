@@ -52,6 +52,22 @@ module GhostsHelper
 
     return ghosts_obtained
   end
-        
+
+  def determine_ghosts_obtained_on_planet(cards, planet)
+
+    ghosts_obtained = {}
+
+    Ghost.all.each do |ghost|
+      if ghost.planet == planet
+        if cards.include? ghost.card_id
+          ghosts_obtained[ghost] = true
+        else
+          ghosts_obtained[ghost] = false
+        end
+      end
+    end
+
+      return ghosts_obtained
+  end
 
 end

@@ -1,10 +1,10 @@
 <div class="container">
   <h1><%= @guardian %></h1>
-  <p>You're on the <%= @platform %> platform!</p>
+  <p>You're on the <%= @platform %> platform! </p>
 
   <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-    Dropdown
+      Planets
       <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -16,32 +16,30 @@
     </ul>
   </div>
 
-  <% ["Tower", "Earth", "Moon", "Venus", "Mars"].each do |planet| %>
-    <h1><%= planet %></h1>
-    <div class="panel-group">
-      <% @ghosts_obtained[planet].each do |ghost, has| %>
-	<% if has %>
-          <div class="panel panel-success">
-	<% else %>
-          <div class="panel panel-danger">
-	<% end %>
-          <div class="panel-heading">
-	    <h3 class="panel-title">
-	      <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian" href="#panel<%= planet %><%= ghost.card_id %>">
-		<%= ghost.card_name %>
-	      </a>
-	    </h3>
-	  </div>
-	  <div id="panel<%= planet %><%= ghost.card_id %>" class="panel-collapse collapse">
-	    <div class="panel-body">
-	      <p> Location: <%= ghost.location %> </p>
-	      <p> Missions: <%= ghost.missions %> </p>
-	      <p> Points: <%= ghost.points %> </p>
-	    </div>
+  <h1><%= @planet %></h1>
+  <div class="panel-group">
+    <% @ghosts_obtained.each do |ghost, has| %>
+      <% if has %>
+	<div class="panel panel-success">
+      <% else %>
+	<div class="panel panel-danger">
+      <% end %>
+        <div class="panel-heading">
+	  <h3 class="panel-title">
+	    <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian" href="#panel<%= @planet %><%= ghost.card_id %>">
+	      <%= ghost.card_name %>
+	    </a>
+	  </h3>
+	</div>
+	<div id="panel<%= @planet %><%= ghost.card_id %>" class="panel-collapse collapse">
+	  <div class="panel-body">
+	    <p> Location: <%= ghost.location %> </p>
+	    <p> Missions: <%= ghost.missions %> </p>
+	    <p> Points: <%= ghost.points %> </p>
 	  </div>
 	</div>
-      <% end %>
-    </div>
-  <% end %>
-     
+      </div>
+    <% end %>
+  </div>
+  
 </div>

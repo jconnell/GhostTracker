@@ -3,6 +3,8 @@ RailsApp::Application.routes.draw do
 
   get '/ghosts/:platform/:guardian' => 'ghosts#status'
 
+  get '/ghosts/:platform/:guardian/:planet' => 'ghosts#planet'
+
   post '/collect' => 'ghosts#collect'
 
   resources :ghosts
