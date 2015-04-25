@@ -1,3 +1,13 @@
+########################################################
+# Makefile for GhostTracker
+#
+# useful targets:
+#   make rubocop             -- source code checks
+#   make ci                  -- run rspec tests
+########################################################
+
+rubocop:
+	rubocop --format emacs spec app
 
 bundle:
 	bundle
@@ -10,6 +20,5 @@ rspec:
 	bundle exec rspec
 
 ci: bundle rebuild-test-db rspec
-	:
 
 all: ci

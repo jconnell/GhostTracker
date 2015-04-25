@@ -20,6 +20,7 @@ group :development, :test do
   gem 'minitest', '~> 4.7.5'
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'rubocop'
   gem 'thor', '= 0.14.6'
 end
 
