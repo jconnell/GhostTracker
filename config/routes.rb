@@ -1,7 +1,7 @@
 RailsApp::Application.routes.draw do
   root :to => "home#index"
 
-  get '/ghosts/:platform/:guardian' => 'ghosts#status'
+  get '/ghosts/:platform/:guardian/All' => 'ghosts#status'
 
   get '/ghosts/:platform/:guardian/:planet' => 'ghosts#planet'
 
