@@ -1,7 +1,7 @@
 class GhostsController < ApplicationController
   
   def collect
-    redirect_to "/ghosts/#{params[:platform]}/#{params[:guardian]}"
+    redirect_to "/ghosts/#{params[:platform]}/#{params[:guardian]}/All"
   end
 
   def status
