@@ -1,0 +1,11 @@
+language: ruby
+notifications:
+    email: false
+branches:
+    only:
+        - master
+script: make ci
+rvm:
+    - 1.9.3
+gemfile:
+    Gemfile

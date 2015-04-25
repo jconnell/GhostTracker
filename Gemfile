@@ -16,9 +16,18 @@ group :production, :postgresql do
 end
 
 group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'minitest', '~> 4.7.5'
+  gem 'rspec-rails'
   gem 'sqlite3'
-  gem 'minitest'
   gem 'thor', '= 0.14.6'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'faker'
+  gem 'guard-rspec'
+  gem 'launchy'
 end
 
 # Gems used only for assets and not required
