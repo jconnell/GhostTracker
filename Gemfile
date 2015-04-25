@@ -29,6 +29,7 @@ group :test do
   gem 'faker'
   gem 'guard-rspec'
   gem 'launchy'
+  gem 'simplecov', :require => false
 end
 
 # Gems used only for assets and not required
