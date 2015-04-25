@@ -17,7 +17,7 @@ rubocop:
 	@echo "#############################################"
 	@echo "# Running rubocop code analyzer"
 	@echo "#############################################"
-	rubocop --format emacs spec app
+	rubocop spec app
 
 bundle:
 	@echo "#############################################"
