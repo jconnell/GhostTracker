@@ -1,21 +1,25 @@
 <div class="container">
-  <h1><%= @guardian %></h1>
-  <p>You're on the <%= @platform %> platform!</p>
-
-  <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-    Planets
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Tower">Tower</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Earth">Earth</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Moon">Moon</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Venus">Venus</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Mars">Mars</a></li>
-    </ul>
+  <div class="row">
+    <div class="col-lg-2" style="padding-right: 5px">
+      <h1> <%= @guardian %></h1>
+      <p>You're on the <%= @platform %> platform!</p>
+      </div>
+      <div class="col-lg-2" style="padding-top: 25px">
+	<div class="dropdown">
+	  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+	    Planets
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+	    <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Tower">Tower</a></li>
+	    <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Earth">Earth</a></li>
+	    <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Moon">Moon</a></li>
+	    <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Venus">Venus</a></li>
+	    <li role="presentation"><a role="menuitem" tabindex="-1" href="/ghosts/<%= @platform %>/<%= @guardian %>/Mars">Mars</a></li>
+	  </ul>
+	</div>
+      </div>
   </div>
-
   <% ["Tower", "Earth", "Moon", "Venus", "Mars"].each do |planet| %>
     <h1><%= planet %></h1>
     <div class="panel-group">
