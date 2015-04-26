@@ -17,3 +17,6 @@
 .project
 *~
 \#*\#
+
+# Ignore coverage report
+coverage
