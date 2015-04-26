@@ -3,26 +3,18 @@ module GhostsHelper
   require 'open-uri'
 
   def membership_id_for_guardian(platform, guardian)
-    if platform == 'xbl'
-      system = '1'
-    else
-      system = '2'
-    end
+    
+    system = platform == 'xbl' ? '1' : '2'
 
     response = JSON.load(open("https://www.bungie.net/platform/destiny/SearchDestinyPlayer/#{system}/#{guardian}/"))["Response"]
-    if response == []
-      return nil
-    else
-      return response[0]["membershipId"]
-    end
+
+    return response == [] ? nil : response[0]["membershipId"]
+
   end
 
   def cards_for_guardian(platform, membership_id)
-    if platform == 'xbl'
-      system = '1'
-    else
-      system = '2'
-    end
+
+    system = platform == 'xbl' ? '1' : '2'
 
     cards = []
      
@@ -34,7 +26,7 @@ module GhostsHelper
     return cards
   end
 
-  def determine_ghosts_obtained(cards)
+  def determine_ghosts_obtained(cards, planet = nil)
     
     ghosts_obtained = {}
     
@@ -49,25 +41,8 @@ module GhostsHelper
         ghosts_obtained[ghost.planet][ghost] = false
       end
     end
-
-    return ghosts_obtained
-  end
-
-  def determine_ghosts_obtained_on_planet(cards, planet)
-
-    ghosts_obtained = {}
-
-    Ghost.all.each do |ghost|
-      if ghost.planet == planet
-        if cards.include? ghost.card_id
-          ghosts_obtained[ghost] = true
-        else
-          ghosts_obtained[ghost] = false
-        end
-      end
-    end
-
-      return ghosts_obtained
+ 
+    return planet ? ghosts_obtained[planet] : ghosts_obtained
   end
 
 end

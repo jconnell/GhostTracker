@@ -15,7 +15,7 @@ class GhostsController < ApplicationController
       redirect_to :root
     else
       cards = cards_for_guardian(@platform, membership_id)
-      @ghosts_obtained = determine_ghosts_obtained(cards)
+      @ghosts_obtained = determine_ghosts_obtained(cards, nil)
     end
   end
 
@@ -31,7 +31,8 @@ class GhostsController < ApplicationController
       redirect_to :root
     else
       cards = cards_for_guardian(@platform, membership_id)
-      @ghosts_obtained = determine_ghosts_obtained_on_planet(cards, @planet)
+      #@ghosts_obtained = determine_ghosts_obtained_on_planet(cards, @planet)
+      @ghosts_obtained = determine_ghosts_obtained(cards, @planet)
     end
   end
 end
