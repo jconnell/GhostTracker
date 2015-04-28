@@ -21,7 +21,7 @@
       </div>
   </div>
   <% ["Tower", "Earth", "Moon", "Venus", "Mars"].each do |planet| %>
-    <h1><%= planet %></h1>
+    <h1><%= planet %>  (<%= @ghosts_count[planet] %>/<%= @ghosts_obtained[planet].length %>)</h1>
     <div class="panel-group">
       <% @ghosts_obtained[planet].each do |ghost, has| %>
 	<% if has %>

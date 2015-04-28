@@ -1,5 +1,5 @@
 RailsApp::Application.routes.draw do
-  root :to => "home#index"
+  root to: 'home#index'
 
   get '/ghosts/:platform/:guardian/All' => 'ghosts#status'
 

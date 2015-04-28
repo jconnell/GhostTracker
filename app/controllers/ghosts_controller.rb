@@ -1,5 +1,4 @@
 class GhostsController < ApplicationController
-  
   def collect
     redirect_to "/ghosts/#{params[:platform]}/#{params[:guardian]}/All"
   end
@@ -10,12 +9,13 @@ class GhostsController < ApplicationController
 
     membership_id = membership_id_for_guardian(@platform, @guardian)
 
-    if membership_id == nil
+    if membership_id.nil?
       flash[:error] = "Couldn't find <b>#{@guardian}</b> on <b>#{@platform.upcase}</b>!"
       redirect_to :root
     else
       cards = cards_for_guardian(@platform, membership_id)
       @ghosts_obtained = determine_ghosts_obtained(cards, nil)
+      @ghosts_count = get_ghosts_count(cards)
     end
   end
 
@@ -26,12 +26,12 @@ class GhostsController < ApplicationController
 
     membership_id = membership_id_for_guardian(@platform, @guardian)
 
-    if membership_id == nil
+    if membership_id.nil?
       flash[:error] = "Couldn't find <b>#{@guardian}</b> on <b>#{@platform.upcase}</b>!"
       redirect_to :root
     else
       cards = cards_for_guardian(@platform, membership_id)
-      #@ghosts_obtained = determine_ghosts_obtained_on_planet(cards, @planet)
+      # @ghosts_obtained = determine_ghosts_obtained_on_planet(cards, @planet)
       @ghosts_obtained = determine_ghosts_obtained(cards, @planet)
     end
   end
