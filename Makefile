@@ -17,7 +17,7 @@ rubocop:
 	@echo "#############################################"
 	@echo "# Running rubocop code analyzer"
 	@echo "#############################################"
-	rubocop spec app
+	RAILS_ENV=test bundle exec rubocop spec app
 
 bundle:
 	@echo "#############################################"

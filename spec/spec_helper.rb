@@ -20,11 +20,28 @@
 ENV["RAILS_ENV"] ||= 'test'
 require 'simplecov'
 SimpleCov.start
+
 require File.expand_path("../../config/environment", __FILE__)
 require 'capybara/rspec'
 require 'rspec/rails'
+require 'vcr'
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  c.hook_into :webmock # or :fakeweb
+end
 
 RSpec.configure do |config|
+  # Add VCR to all tests
+  config.around(:each) do |example|
+    options = example.metadata[:vcr] || {}
+    if options[:record] == :skip
+      VCR.turned_off(&example)
+    else
+      name = example.metadata[:full_description].split(/\s+/, 2).join("/").underscore.gsub(/[^\w\/]+/, "_")
+      VCR.use_cassette(name, options, &example)
+    end
+  end
   config.expect_with(:rspec) { |c| c.syntax = :should }
   #config.include GhostsHelper, :type => :controller
   # rspec-expectations config goes here. You can use an alternate

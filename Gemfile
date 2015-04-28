@@ -22,6 +22,8 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rubocop'
   gem 'thor', '= 0.14.6'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :test do
