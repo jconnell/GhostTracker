@@ -15,12 +15,20 @@ RSpec.describe GhostsController, type: :controller do
       assigns(:ghosts_obtained).should_not be_empty
     end
 
-    context 'with valid attributes' do
+    context 'with valid xbl attributes' do
       it 'renders the :status template' do
         get :status, platform: 'xbl', guardian: 'ad1h'
         response.should render_template :status
       end
     end
+
+    context 'with valid psn attributes' do
+      it 'renders the :status template' do
+        get :status, platform: 'psn', guardian: 'Blon19'
+        response.should render_template :status
+      end
+    end
+
   end
 end
 

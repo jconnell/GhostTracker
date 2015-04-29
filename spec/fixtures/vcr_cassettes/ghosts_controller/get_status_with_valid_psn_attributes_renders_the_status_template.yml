@@ -1,0 +1,191 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bungie.net/platform/destiny/SearchDestinyPlayer/2/Blon19/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Wed, 29 Apr 2015 02:58:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '236'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df71ca078eff2a9574b50823918c5a2021430276287; expires=Thu, 28-Apr-16
+        02:58:07 GMT; path=/; domain=.bungie.net; HttpOnly
+      - bungled=7132745903822671053; path=/
+      - bungledid=B5tZBhXoZ7NBmQiAvjijmFJWYOZzP1DSCAAA; expires=Tue, 29-Apr-2025 02:58:07
+        GMT; path=/; HttpOnly
+      - sto-id-sg_www.bungie.net=OIAKHPAK; Expires=Wed, 29-Apr-2015 03:58:07 GMT;
+        Path=/
+      - sto-id-sg_www.bungie.net=OIAKHPAK; Expires=Wed, 29-Apr-2015 03:58:07 GMT;
+        Path=/
+      Cache-Control:
+      - private
+      Expires:
+      - '-1'
+      X-Bungienext-Renderer:
+      - Frog Blast the Ventcore
+      X-Ua-Compatible:
+      - IE=edge
+      X-Ventcore-Status:
+      - '1'
+      X-Bungienext-Mid2:
+      - 09
+      P3p:
+      - CP="ALL DSP COR PSD PSA TAI ADM CUR SAM OUR IND UNI COM INT CNT PRE"
+      Access-Control-Allow-Origin:
+      - http://www.bungie.net
+      X-Selfurl:
+      - https://www.bungie.net/platform/destiny/SearchDestinyPlayer/2/Blon19/
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 1de7be4d62420cfb-ATL
+    body:
+      encoding: US-ASCII
+      string: ! '{"Response":[{"iconPath":"/img/theme/destiny/icons/icon_psn.png","membershipType":2,"membershipId":"4611686018435715053","displayName":"Blon19"}],"ErrorCode":1,"ThrottleSeconds":0,"ErrorStatus":"Success","Message":"Ok","MessageData":{}}'
+    http_version: 
+  recorded_at: Wed, 29 Apr 2015 02:58:06 GMT
+- request:
+    method: get
+    uri: http://www.bungie.net/Platform/Destiny/Vanguard/Grimoire/2/4611686018435715053/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Apr 2015 02:58:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db4e749fb18eee4f37ac43f9fa1a4ae7e1430276287; expires=Thu, 28-Apr-16
+        02:58:07 GMT; path=/; domain=.bungie.net; HttpOnly
+      - bungled=7279964670191331495; path=/
+      - bungledid=Bxcu9cJ73ahLoVf0SbqAqaH4sDh0P1DSCAAA; expires=Tue, 29-Apr-2025 02:58:07
+        GMT; path=/; HttpOnly
+      - sto-id-sg_www.bungie.net=JIAKHPAK; Expires=Wed, 29-Apr-2015 03:58:07 GMT;
+        Path=/
+      - sto-id-sg_www.bungie.net=JIAKHPAK; Expires=Wed, 29-Apr-2015 03:58:07 GMT;
+        Path=/
+      Cache-Control:
+      - private
+      Expires:
+      - '-1'
+      X-Bungienext-Renderer:
+      - Frog Blast the Ventcore
+      X-Ua-Compatible:
+      - IE=edge
+      X-Ventcore-Status:
+      - '1'
+      X-Bungienext-Mid2:
+      - '02'
+      P3p:
+      - CP="ALL DSP COR PSD PSA TAI ADM CUR SAM OUR IND UNI COM INT CNT PRE"
+      Access-Control-Allow-Origin:
+      - http://www.bungie.net
+      X-Selfurl:
+      - http://www.bungie.net/Platform/Destiny/Vanguard/Grimoire/2/4611686018435715053/
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-encoding
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 1de7be4e97ec04dd-ATL
+    body:
+      encoding: US-ASCII
+      string: ! '{"Response":{"data":{"score":695,"cardCollection":[{"cardId":101005,"score":0,"points":0},{"cardId":101010,"score":0,"points":0,"statisticCollection":[{"statNumber":1,"value":2095.0,"displayValue":"2095"},{"statNumber":2,"value":0.0,"displayValue":"0"},{"statNumber":3,"value":0.0,"displayValue":"0"}]},{"cardId":101120,"score":0,"points":0},{"cardId":101130,"score":0,"points":0},{"cardId":101140,"score":0,"points":0},{"cardId":101145,"score":0,"points":0},{"cardId":102030,"score":0,"points":0},{"cardId":103010,"score":15,"points":15},{"cardId":103020,"score":0,"points":0},{"cardId":103090,"score":0,"points":0},{"cardId":103094,"score":0,"points":0,"statisticCollection":[{"statNumber":1,"value":4.0,"displayValue":"4"}]},{"cardId":104010,"score":15,"points":15},{"cardId":105010,"score":15,"points":15},{"cardId":105060,"score":15,"points":15},{"cardId":106070,"score":5,"points":5},{"cardId":108070,"score":0,"points":0},{"cardId":108075,"score":0,"points":0},{"cardId":108080,"score":0,"points":0},{"cardId":108090,"score":0,"points":0},{"cardId":108100,"score":0,"points":0},{"cardId":108110,"score":0,"points":0},{"cardId":109010,"score":0,"points":0},{"cardId":109020,"score":0,"points":0},{"cardId":109040,"score":5,"points":5},{"cardId":109050,"score":0,"points":0},{"cardId":109060,"score":0,"points":0},{"cardId":109070,"score":0,"points":0},{"cardId":109080,"score":0,"points":0},{"cardId":109100,"score":0,"points":0},{"cardId":109110,"score":0,"points":0},{"cardId":109120,"score":0,"points":0},{"cardId":201010,"score":10,"points":5,"statisticCollection":[{"statNumber":1,"value":606.0,"displayValue":"606","rankCollection":[{"rank":1,"points":5}]}]},{"cardId":201060,"score":10,"points":10},{"cardId":201063,"score":10,"points":10},{"cardId":201070,"score":10,"points":10},{"cardId":201090,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":298.0,"displayValue":"298"}]},{"cardId":201110,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":36.0,"displayValue":"36"}]},{"cardId":201120,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":17.0,"displayValue":"17"}]},{"cardId":201130,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":232.0,"displayValue":"232"}]},{"cardId":201140,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":2.0,"displayValue":"2"}]},{"cardId":201150,"score":5,"points":5},{"cardId":202130,"score":5,"points":5},{"cardId":202140,"score":5,"points":5},{"cardId":203010,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":383.0,"displayValue":"383"}]},{"cardId":203060,"score":10,"points":10},{"cardId":203065,"score":10,"points":10},{"cardId":203120,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":253.0,"displayValue":"253"}]},{"cardId":203130,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":45.0,"displayValue":"45"}]},{"cardId":203140,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":16.0,"displayValue":"16"}]},{"cardId":203150,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":58.0,"displayValue":"58"}]},{"cardId":203160,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":1.0,"displayValue":"1"}]},{"cardId":204120,"score":5,"points":5},{"cardId":207010,"score":15,"points":5,"statisticCollection":[{"statNumber":1,"value":1651.0,"displayValue":"1651","rankCollection":[{"rank":1,"points":5},{"rank":2,"points":5}]}]},{"cardId":207020,"score":5,"points":5},{"cardId":207060,"score":10,"points":10},{"cardId":207070,"score":10,"points":10},{"cardId":207080,"score":10,"points":10},{"cardId":207090,"score":10,"points":10},{"cardId":207100,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":36.0,"displayValue":"36"}]},{"cardId":207120,"score":10,"points":5,"statisticCollection":[{"statNumber":1,"value":628.0,"displayValue":"628","rankCollection":[{"rank":1,"points":5}]}]},{"cardId":207130,"score":10,"points":5,"statisticCollection":[{"statNumber":1,"value":671.0,"displayValue":"671","rankCollection":[{"rank":1,"points":5}]}]},{"cardId":207140,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":22.0,"displayValue":"22"}]},{"cardId":207150,"score":10,"points":5,"statisticCollection":[{"statNumber":1,"value":267.0,"displayValue":"267","rankCollection":[{"rank":1,"points":5}]}]},{"cardId":208010,"score":10,"points":10},{"cardId":208020,"score":10,"points":10},{"cardId":208110,"score":5,"points":5},{"cardId":208120,"score":5,"points":5},{"cardId":208130,"score":5,"points":5},{"cardId":209010,"score":5,"points":5},{"cardId":301050,"score":0,"points":0},{"cardId":301060,"score":0,"points":0},{"cardId":301063,"score":0,"points":0},{"cardId":301067,"score":0,"points":0},{"cardId":301070,"score":0,"points":0},{"cardId":301077,"score":0,"points":0},{"cardId":301113,"score":0,"points":0},{"cardId":301120,"score":0,"points":0},{"cardId":301130,"score":0,"points":0},{"cardId":301180,"score":0,"points":0},{"cardId":302010,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":890.0,"displayValue":"890"}]},{"cardId":302050,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":0.0,"displayValue":"0"}]},{"cardId":302070,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":799.0,"displayValue":"799"}]},{"cardId":302090,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":206.0,"displayValue":"206"}]},{"cardId":303010,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":47.0,"displayValue":"47"}]},{"cardId":303040,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":75.0,"displayValue":"75"}]},{"cardId":303070,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":19.0,"displayValue":"19"}]},{"cardId":304010,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":34.0,"displayValue":"34"}]},{"cardId":304040,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":0.0,"displayValue":"0"}]},{"cardId":305020,"score":0,"points":0},{"cardId":305040,"score":0,"points":0},{"cardId":307020,"score":0,"points":0},{"cardId":307030,"score":0,"points":0},{"cardId":309060,"score":15,"points":15},{"cardId":311010,"score":10,"points":10},{"cardId":311020,"score":5,"points":5},{"cardId":402020,"score":10,"points":5,"statisticCollection":[{"statNumber":1,"value":1226.0,"displayValue":"1226","rankCollection":[{"rank":1,"points":5}]}]},{"cardId":403010,"score":5,"points":5},{"cardId":403020,"score":15,"points":15},{"cardId":403030,"score":0,"points":0},{"cardId":403060,"score":0,"points":0},{"cardId":403070,"score":5,"points":5},{"cardId":403090,"score":0,"points":0},{"cardId":404010,"score":5,"points":5},{"cardId":404020,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":872.0,"displayValue":"872"}]},{"cardId":404040,"score":5,"points":5},{"cardId":405020,"score":5,"points":5,"statisticCollection":[{"statNumber":1,"value":542.0,"displayValue":"542"}]},{"cardId":407010,"score":5,"points":5},{"cardId":407020,"score":5,"points":5},{"cardId":408010,"score":5,"points":5},{"cardId":408020,"score":5,"points":5},{"cardId":501010,"score":5,"points":0,"statisticCollection":[{"statNumber":3,"value":31.0,"displayValue":"31","rankCollection":[{"rank":1,"points":5}]}]},{"cardId":501040,"score":5,"points":5},{"cardId":501045,"score":5,"points":5,"statisticCollection":[]},{"cardId":501050,"score":15,"points":15,"statisticCollection":[]},{"cardId":501060,"score":5,"points":5,"statisticCollection":[]},{"cardId":501080,"score":5,"points":5,"statisticCollection":[]},{"cardId":501120,"score":10,"points":10,"statisticCollection":[]},{"cardId":502020,"score":5,"points":5,"statisticCollection":[]},{"cardId":502050,"score":5,"points":5,"statisticCollection":[]},{"cardId":502060,"score":10,"points":10,"statisticCollection":[]},{"cardId":502070,"score":5,"points":5,"statisticCollection":[]},{"cardId":502090,"score":15,"points":15,"statisticCollection":[]},{"cardId":502100,"score":5,"points":5,"statisticCollection":[]},{"cardId":502110,"score":10,"points":10,"statisticCollection":[]},{"cardId":502120,"score":10,"points":10,"statisticCollection":[]},{"cardId":502140,"score":15,"points":15,"statisticCollection":[]},{"cardId":503020,"score":5,"points":5,"statisticCollection":[]},{"cardId":503030,"score":5,"points":5,"statisticCollection":[]},{"cardId":503070,"score":5,"points":5,"statisticCollection":[]},{"cardId":503085,"score":10,"points":10,"statisticCollection":[]},{"cardId":503090,"score":5,"points":5,"statisticCollection":[]},{"cardId":503120,"score":10,"points":10,"statisticCollection":[]},{"cardId":503130,"score":15,"points":15,"statisticCollection":[]},{"cardId":504120,"score":15,"points":15,"statisticCollection":[]},{"cardId":601010,"score":0,"points":0,"statisticCollection":[{"statNumber":1,"value":0.0,"displayValue":"0"}]},{"cardId":601170,"score":0,"points":0},{"cardId":603010,"score":0,"points":0,"statisticCollection":[{"statNumber":1,"value":0.0,"displayValue":"0"}]},{"cardId":608010,"score":0,"points":0,"statisticCollection":[{"statNumber":1,"value":0.0,"displayValue":"0"}]},{"cardId":611010,"score":0,"points":0,"statisticCollection":[{"statNumber":1,"value":0.0,"displayValue":"0"}]},{"cardId":613010,"score":0,"points":0,"statisticCollection":[{"statNumber":1,"value":3.0,"displayValue":"3"}]}],"cardsToHide":[],"bonuses":[{"cardId":207120,"cardName":"Vandal","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":628.0,"threshold":750.0,"smallImage":{"rect":{"x":435,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Fallen-csprites-sm_673c57360446836b41dc497a5747dc36.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":207150,"cardName":"Shank","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":267.0,"threshold":375.0,"smallImage":{"rect":{"x":290,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Fallen-csprites-sm_673c57360446836b41dc497a5747dc36.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":207130,"cardName":"Dreg","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":671.0,"threshold":1000.0,"smallImage":{"rect":{"x":145,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Fallen-csprites-sm_673c57360446836b41dc497a5747dc36.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":402020,"cardName":"Ishtar
+        Sink","statName":"Kills","bonusName":"Resource Income Bonus ","bonusDescription":"Extra
+        materials drop from material nodes in this destination.","bonusRank":{"statId":1,"rank":2},"value":1226.0,"threshold":2500.0,"smallImage":{"rect":{"x":290,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Venus-csprites-sm_d8665d34558a93d3f66f7b19509992d1.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":580}}},{"cardId":404020,"cardName":"Old
+        Russia","statName":"Kills","bonusName":"Resource Income Bonus ","bonusDescription":"Extra
+        materials drop from material nodes in this destination.","bonusRank":{"statId":1,"rank":2},"value":872.0,"threshold":2500.0,"smallImage":{"rect":{"x":290,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Earth-csprites-sm_13fc8ed95f4110b49fc5e23f50fbe534.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":725}}},{"cardId":201130,"cardName":"Thrall","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":232.0,"threshold":750.0,"smallImage":{"rect":{"x":145,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Hive-csprites-sm_bb15fdee05d303a2ef6bc005fd7d3f16.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":201090,"cardName":"Acolyte","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":298.0,"threshold":1250.0,"smallImage":{"rect":{"x":290,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Hive-csprites-sm_bb15fdee05d303a2ef6bc005fd7d3f16.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":405020,"cardName":"The
+        Ocean of Storms","statName":"Kills","bonusName":"Resource Income Bonus ","bonusDescription":"Extra
+        materials drop from material nodes in this destination.","bonusRank":{"statId":1,"rank":2},"value":542.0,"threshold":2500.0,"smallImage":{"rect":{"x":290,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Moon-csprites-sm_7d6f151c00c3b708480580d7e55aaddb.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":580}}},{"cardId":203120,"cardName":"Goblin","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":253.0,"threshold":1250.0,"smallImage":{"rect":{"x":145,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Vex-csprites-sm_0638d88adacd6df6d9264a2ca39e17a3.jpg","sheetSize":{"x":0,"y":0,"height":290,"width":1160}}},{"cardId":302010,"cardName":"Auto
+        Rifles","statName":"Kills","bonusName":"Weapon XP Bonus","bonusDescription":"All
+        characters will earn weapon experience faster for weapons of this type.","bonusRank":{"statId":1,"rank":2},"value":890.0,"threshold":5000.0,"smallImage":{"rect":{"x":0,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/PrimaryWeapons-csprites-sm_1283e3b408b95dfe1ccb25fb8261682f.jpg","sheetSize":{"x":0,"y":0,"height":290,"width":1450}}},{"cardId":207140,"cardName":"Servitor","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":22.0,"threshold":125.0,"smallImage":{"rect":{"x":725,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Fallen-csprites-sm_673c57360446836b41dc497a5747dc36.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":302070,"cardName":"Pulse
+        Rifles","statName":"Kills","bonusName":"Weapon XP Bonus","bonusDescription":"All
+        characters will earn weapon experience faster for weapons of this type.","bonusRank":{"statId":1,"rank":2},"value":799.0,"threshold":5000.0,"smallImage":{"rect":{"x":1015,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/PrimaryWeapons-csprites-sm_1283e3b408b95dfe1ccb25fb8261682f.jpg","sheetSize":{"x":0,"y":0,"height":290,"width":1450}}},{"cardId":203150,"cardName":"Harpy","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":58.0,"threshold":375.0,"smallImage":{"rect":{"x":435,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Vex-csprites-sm_0638d88adacd6df6d9264a2ca39e17a3.jpg","sheetSize":{"x":0,"y":0,"height":290,"width":1160}}},{"cardId":201110,"cardName":"Knight","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":36.0,"threshold":250.0,"smallImage":{"rect":{"x":435,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Hive-csprites-sm_bb15fdee05d303a2ef6bc005fd7d3f16.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":207100,"cardName":"Captain","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":36.0,"threshold":250.0,"smallImage":{"rect":{"x":580,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Fallen-csprites-sm_673c57360446836b41dc497a5747dc36.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":201120,"cardName":"Wizard","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":17.0,"threshold":125.0,"smallImage":{"rect":{"x":725,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Hive-csprites-sm_bb15fdee05d303a2ef6bc005fd7d3f16.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":203130,"cardName":"Hobgoblin","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":45.0,"threshold":500.0,"smallImage":{"rect":{"x":290,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Vex-csprites-sm_0638d88adacd6df6d9264a2ca39e17a3.jpg","sheetSize":{"x":0,"y":0,"height":290,"width":1160}}},{"cardId":203140,"cardName":"Minotaur","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":16.0,"threshold":250.0,"smallImage":{"rect":{"x":580,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Vex-csprites-sm_0638d88adacd6df6d9264a2ca39e17a3.jpg","sheetSize":{"x":0,"y":0,"height":290,"width":1160}}},{"cardId":302090,"cardName":"Hand
+        Cannons","statName":"Kills","bonusName":"Weapon XP Bonus","bonusDescription":"All
+        characters will earn weapon experience faster for weapons of this type.","bonusRank":{"statId":1,"rank":2},"value":206.0,"threshold":5000.0,"smallImage":{"rect":{"x":0,"y":145,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/PrimaryWeapons-csprites-sm_1283e3b408b95dfe1ccb25fb8261682f.jpg","sheetSize":{"x":0,"y":0,"height":290,"width":1450}}},{"cardId":304010,"cardName":"Rocket
+        Launchers","statName":"Kills","bonusName":"Weapon XP Bonus","bonusDescription":"All
+        characters will earn weapon experience faster for weapons of this type.","bonusRank":{"statId":1,"rank":2},"value":34.0,"threshold":1000.0,"smallImage":{"rect":{"x":0,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/HeavyWeapons-csprites-sm_290599a0c749d5e98314458b1faeb296.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1015}}},{"cardId":303040,"cardName":"Fusion
+        Rifles","statName":"Kills","bonusName":"Weapon XP Bonus","bonusDescription":"All
+        characters will earn weapon experience faster for weapons of this type.","bonusRank":{"statId":1,"rank":2},"value":75.0,"threshold":2500.0,"smallImage":{"rect":{"x":435,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/SpecialWeapons-csprites-sm_f826598f0c751239d0e2564a69067120.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1740}}},{"cardId":303010,"cardName":"Shotguns","statName":"Kills","bonusName":"Weapon
+        XP Bonus","bonusDescription":"All characters will earn weapon experience faster
+        for weapons of this type.","bonusRank":{"statId":1,"rank":2},"value":47.0,"threshold":2500.0,"smallImage":{"rect":{"x":0,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/SpecialWeapons-csprites-sm_f826598f0c751239d0e2564a69067120.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1740}}},{"cardId":201140,"cardName":"Ogre","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":2.0,"threshold":125.0,"smallImage":{"rect":{"x":580,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Hive-csprites-sm_bb15fdee05d303a2ef6bc005fd7d3f16.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1885}}},{"cardId":203160,"cardName":"Hydra","statName":"Kills","bonusName":"Glimmer
+        Income Bonus","bonusDescription":"All characters earn more Glimmer when this
+        combatant is killed with a Glimmer-drop consumable active.","bonusRank":{"statId":1,"rank":2},"value":1.0,"threshold":125.0,"smallImage":{"rect":{"x":725,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Vex-csprites-sm_0638d88adacd6df6d9264a2ca39e17a3.jpg","sheetSize":{"x":0,"y":0,"height":290,"width":1160}}},{"cardId":303070,"cardName":"Sniper
+        Rifles","statName":"Kills","bonusName":"Weapon XP Bonus","bonusDescription":"All
+        characters will earn weapon experience faster for weapons of this type.","bonusRank":{"statId":1,"rank":2},"value":19.0,"threshold":2500.0,"smallImage":{"rect":{"x":1015,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/SpecialWeapons-csprites-sm_f826598f0c751239d0e2564a69067120.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1740}}},{"cardId":302050,"cardName":"Scout
+        Rifles","statName":"Kills","bonusName":"Weapon XP Bonus","bonusDescription":"All
+        characters will earn weapon experience faster for weapons of this type.","bonusRank":{"statId":1,"rank":2},"value":0.0,"threshold":5000.0,"smallImage":{"rect":{"x":580,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/PrimaryWeapons-csprites-sm_1283e3b408b95dfe1ccb25fb8261682f.jpg","sheetSize":{"x":0,"y":0,"height":290,"width":1450}}},{"cardId":304040,"cardName":"Machine
+        Guns","statName":"Kills","bonusName":"Weapon XP Bonus","bonusDescription":"All
+        characters will earn weapon experience faster for weapons of this type.","bonusRank":{"statId":1,"rank":2},"value":0.0,"threshold":1000.0,"smallImage":{"rect":{"x":435,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/HeavyWeapons-csprites-sm_290599a0c749d5e98314458b1faeb296.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1015}}},{"cardId":601010,"cardName":"Strikes
+        Introduction","statName":"Completions","bonusName":"Activity Reward Bonus","bonusDescription":"Cloaks,
+        marks, and bonds can now drop for completing any Strike.","bonusRank":{"statId":1,"rank":1},"value":0.0,"threshold":50.0,"smallImage":{"rect":{"x":0,"y":0,"height":145,"width":145},"sheetPath":"/common/destiny_content/grimoire/hr_images/Strikes-csprites-sm_2aaef47c2e3fd467ef3e595abb6fdf9b.jpg","sheetSize":{"x":0,"y":0,"height":145,"width":1450}}}]}},"ErrorCode":1,"ThrottleSeconds":0,"ErrorStatus":"Success","Message":"Ok","MessageData":{}}'
+    http_version: 
+  recorded_at: Wed, 29 Apr 2015 02:58:07 GMT
+recorded_with: VCR 2.9.3
