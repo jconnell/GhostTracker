@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/jconnell/GhostTracker.png)](https://travis-ci.org/jconnell/GhostTracker)
+
 # GhostTracker #
 Dead Ghost tracking app for Destiny.
 
