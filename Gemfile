@@ -22,7 +22,6 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rubocop'
   gem 'thor', '= 0.14.6'
-  gem 'webmock'
   gem 'vcr'
 end
 
@@ -32,6 +31,7 @@ group :test do
   gem 'guard-rspec'
   gem 'launchy'
   gem 'simplecov', require: false
+  gem 'webmock'
 end
 
 # Gems used only for assets and not required
